@@ -292,23 +292,127 @@ void decode_file2() {
 	decode((char*)file, 20, 151);
 }
 
+void decode_303() {
+	int v303[6] = { 0 };
+	v303[3] = -269833756;
+	v303[1] = -470616577;
+	v303[4] = -336534812;
+	v303[2] = -269833749;
+	v303[5] = 0xE9F5A8;
+	*(short*)((char*)v303 + 1) = -22228;
+	v303[0] |= -11 << 24;
+	decode((char*)v303, 21, 170);
+}
+
+void decode_path() {
+	char path[23] = { 0 };
+	path[2] = 67;
+	path[9] = 67;
+	path[12] = 14;
+	path[13] = 67;
+	path[16] = 14;
+	path[17] = 13;
+	path[18] = 30;
+	path[20] = 66;
+	path[1] = -75;
+	path[4] = 21;
+	path[3] = 31;
+	path[5] = 31;
+	path[11] = 5;
+	path[15] = 5;
+	path[21] = 31;
+	path[6] = 24;
+	path[22] = 3;
+	path[7] = 9;
+	path[8] = 1;
+	path[19] = 24;
+	decode(path, 21, 217);
+}
+
+void dptr() {
+	char ptr[7] = { 0 };
+	ptr[1] = -64;
+	*(short*)&ptr[2] = 1025;
+	*(short*)&ptr[4] = 2319;
+	ptr[6] = 27;
+	decode(ptr, 6, 173);
+}
+
+void dtmp() {
+	char tmpName[27] = { 0 };
+	tmpName[3] = 9;
+	tmpName[11] = 21;
+	tmpName[12] = 31;
+	tmpName[19] = 7;
+	tmpName[15] = 13;
+	tmpName[25] = 5;
+	*(short*)&tmpName[17] = 1306;
+	tmpName[1] = -71;
+	tmpName[2] = 28;
+	*(int*)&tmpName[4] = 520429342;
+	tmpName[8] = 24;
+	*(short*)&tmpName[9] = 8002;
+	*(short*)&tmpName[13] = 2114;
+	*(int*)&tmpName[20] = 1107368514;
+	tmpName[26] = 14;
+	decode(tmpName, 25, 213);
+}
+
+void dstdev() {
+	char buf[5] = { 0 };
+	*(int*)(buf + 1) = 0xEFB908;
+	decode(buf, 2, 148);
+}
+
+void dtmp2() {
+	char tmp[20] = { 0 };
+	*(int*)&tmp[8] = 101385288;
+	tmp[3] = 4;
+	tmp[2] = 73;
+	tmp[12] = 20;
+	*(short*)&tmp[13] = 532;
+	tmp[15] = 20;
+	*(int*)&tmp[16] = 352718153;
+	tmp[1] = -28;
+	*(int*)&tmp[4] = 34538502;
+	decode(tmp, 18, 131);
+}
+
+void dtmp3() {
+	int tmp[5] = { 0 };
+	tmp[0] = -43 << 24;
+	tmp[1] = -740370985;
+	tmp[4] = -824978792;
+	tmp[3] = -975977019;
+	*(short*)((char*)tmp + 1) = -26571;
+	tmp[2] = -673524327;
+	decode((char*)tmp, 18, 131);
+}
+
 void _0x1D() {
 	printf("case 0x1D\n");
-	printf("v290: "); decode_v290();
-	printf("v288: "); decode_v288();
-	printf("v303: "); decode_v303();
-	printf("v284: "); decode_v284();
-	printf("ptr: "); decode_ptr();
-	printf("v289: "); decode_v289();
-	printf("v285: "); decode_v285();
-	printf("file: "); decode_file1();
-	printf("v282: "); decode_282();
-	printf("v307: "); decode_307();
-	printf("v283: "); decode_283();
-	printf("name: "); decode_name1();
-	printf("v281: "); decode_281();
+	//printf("v290: "); decode_v290();
+	//printf("v288: "); decode_v288();
+	//printf("v303: "); decode_v303();
+	//printf("v284: "); decode_v284();
+	//printf("ptr: "); decode_ptr();
+	//printf("v289: "); decode_v289();
+	//printf("v285: "); decode_v285();
+	//printf("file: "); decode_file1();
+	//printf("v282: "); decode_282();
+	//printf("v307: "); decode_307();
+	//printf("v283: "); decode_283();
+	//printf("name: "); decode_name1();
+	//printf("v281: "); decode_281();
 	printf("v286: "); decode_286();
 	printf("v280: "); decode_280();
 	printf("v287: "); decode_287();
 	printf("file: "); decode_file2();
+	printf("303: "); decode_303();
+	printf("path: "); decode_path();
+	printf("ptr: "); dptr();
+	printf("tmp: "); dtmp();
+	printf("dev: "); dstdev();
+	printf("tmp2: "); dtmp2();
+	printf("tmp3: "); dtmp3();
 }
