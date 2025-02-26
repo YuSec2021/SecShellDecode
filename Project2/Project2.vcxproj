@@ -131,11 +131,13 @@
     <ClCompile Include="decode.cpp" />
     <ClCompile Include="_0x1C.cpp" />
     <ClCompile Include="_0x1D.cpp" />
+    <ClCompile Include="_0x7.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="decode.h" />
     <ClInclude Include="_0x1C.h" />
     <ClInclude Include="_0x1D.h" />
+    <ClInclude Include="_0x7.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

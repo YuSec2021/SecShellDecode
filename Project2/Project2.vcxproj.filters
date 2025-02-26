@@ -22,6 +22,9 @@
     <Filter Include="Decode">
       <UniqueIdentifier>{53ca3c50-4390-418d-afbc-3612fd27eecd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="_0x7">
+      <UniqueIdentifier>{b0e90b97-392e-4adf-8d22-f7ece3a45367}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="a.cpp">
@@ -36,6 +39,9 @@
     <ClCompile Include="decode.cpp">
       <Filter>Decode</Filter>
     </ClCompile>
+    <ClCompile Include="_0x7.cpp">
+      <Filter>_0x7</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="_0x1D.h">
@@ -46,6 +52,9 @@
     </ClInclude>
     <ClInclude Include="decode.h">
       <Filter>Decode</Filter>
+    </ClInclude>
+    <ClInclude Include="_0x7.h">
+      <Filter>_0x7</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
