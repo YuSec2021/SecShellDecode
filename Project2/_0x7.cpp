@@ -66,17 +66,46 @@ void dbuf() {
 	decode((char*)buf, 2, 154);
 }
 
-void dtmp3() {
-    int tmp[6] = { 0 };
-    tmp[1] = 0;
-    tmp[0] = 0;
-    tmp[3] = -271733879;
-    tmp[2] = 1732584193;
-    tmp[4] = -1732584194;
-    tmp[5] = 271733878;
-    decode((char*)tmp, )
+void dtmp4() {
+	int tmp[9] = { 0 };
+    tmp[5] = 0x74B010C;
+    tmp[8] = 274;
+    tmp[6] = 0x17170508;
+    *(short*)((char*)tmp + 1) = 19417;
+    tmp[2] = 0x51005;
+    tmp[1] = 1258622981;
+    tmp[3] = 1259815243;
+    tmp[4] = 117770058;
+    tmp[7] = 0x4A1701;
+	decode((char*)tmp, 32, 189);
 }
 
+void dtmp5() {
+	int cache[5] = { 0 };
+    cache[0] = 0x1D509B;
+    cache[1] = 454434079;
+    cache[3] = 219876621;
+    cache[4] = 0x1B081A50;
+    cache[2] = 521280849;
+	decode((char*)cache, 18, 229);
+}
+
+
+void dtmp6() {
+	char tmpName[20] = { 0 };
+    tmpName[2] = -7;
+    tmpName[3] = -28;
+    *(short*)&tmpName[5] = -1541;
+    tmpName[7] = -28;
+    tmpName[8] = -17;
+    *(short*)&tmpName[9] = -5890;
+    tmpName[1] = 53;
+    tmpName[11] = -1;
+    tmpName[4] = -91;
+    *(int*)&tmpName[12] = -17045339;
+    *(int*)&tmpName[16] = -487986523;
+	decode(tmpName, 18, 190);
+}
 
 void _0x7() {
     printf("v290: "); d290();
@@ -84,5 +113,8 @@ void _0x7() {
     printf("ptr: ");  dptr_0();
     printf("v289: ");  d289();
 	printf("buf: ");  dbuf();
+	printf("tmp: ");  dtmp4();
+	printf("cache: ");  dtmp5();
+	printf("tmpName: ");  dtmp6();
 
 }
