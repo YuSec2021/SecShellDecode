@@ -66,6 +66,18 @@ void dbuf() {
 	decode((char*)buf, 2, 154);
 }
 
+void dtmp3() {
+    int tmp[6] = { 0 };
+    tmp[1] = 0;
+    tmp[0] = 0;
+    tmp[3] = -271733879;
+    tmp[2] = 1732584193;
+    tmp[4] = -1732584194;
+    tmp[5] = 271733878;
+    decode((char*)tmp, )
+}
+
+
 void _0x7() {
     printf("v290: "); d290();
     printf("v288: ");  d288();
