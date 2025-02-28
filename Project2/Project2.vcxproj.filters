@@ -25,6 +25,9 @@
     <Filter Include="_0x7">
       <UniqueIdentifier>{b0e90b97-392e-4adf-8d22-f7ece3a45367}</UniqueIdentifier>
     </Filter>
+    <Filter Include="_0x20">
+      <UniqueIdentifier>{067446fe-10b4-491f-a9fb-d264dbf757a4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="a.cpp">
@@ -42,6 +45,9 @@
     <ClCompile Include="_0x7.cpp">
       <Filter>_0x7</Filter>
     </ClCompile>
+    <ClCompile Include="_0x20.cpp">
+      <Filter>_0x20</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="_0x1D.h">
@@ -55,6 +61,9 @@
     </ClInclude>
     <ClInclude Include="_0x7.h">
       <Filter>_0x7</Filter>
+    </ClInclude>
+    <ClInclude Include="_0x20.h">
+      <Filter>_0x20</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
